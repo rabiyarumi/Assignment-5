@@ -27,9 +27,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              parrot: '#B4F461',
-              black: '#111111',
-              gray: '#111111B3 '
+              parrot: "#B4F461",
+              black: "#111111",
+              gray: "#111111B3 ",
             },
           },
         },
@@ -38,44 +38,188 @@
   </head>
   <body class="lexend overflow-x-hidden">
     <header class="container mx-auto overflow-x-hidden">
-        <!-- Navbar start -->
-        <nav class="flex justify-around items-center pt-8 pb-8 lg:pb-14">
-          <!-- Blog btn -->
-          <button class="btn text-lg md:text-xl font-semibold bg-parrot w-24 md:w-28 text-black">Blog</button>
-          <!-- Donate logo  -->
-            <div class=" md:flex justify-center items-center gap-5 hidden  text-xl text-black font-semibold">
-                <img src="./assets/logo.png " alt="">
-                <p>Donate Bangladesh</p>
-            </div>
-            <!-- Main balance -->
-            <div class="md:text-xl font-semibold flex justify-center items-center  gap-2 lg:gap-5 text-black ">
-                <img src="./assets/coin.png" alt="">
-                <p class="text-gray">
-                    <span>5500</span>
-                    <span>BDT</span>
-                </p>
-            </div>
-        </nav>
-        <hr>
-        <!-- Tab bar starts -->
-         <div class="flex justify-center items-center gap-4">
-            <!-- Donate tab -->
-          <button class="btn text-lg md:text-xl font-semibold bg-parrot w-30 md:w-36 text-black">Donation</button>
+      <!-- Navbar start -->
+      <nav
+        class="flex justify-around items-center pt-8 pb-8 lg:pb-14 bg-[#1111110D]"
+      >
+        <!-- Blog btn -->
+        <button
+          class="btn text-lg md:text-xl font-semibold bg-parrot w-24 md:w-28 text-black"
+        >
+          Blog
+        </button>
+        <!-- Donate logo  -->
+        <div
+          class="md:flex justify-center items-center gap-5 hidden text-xl text-black font-semibold"
+        >
+          <img src="./assets/logo.png " alt="" />
+          <p>Donate Bangladesh</p>
+        </div>
+        <!-- Main balance -->
+        <div
+          class="md:text-xl font-semibold flex justify-center items-center gap-2 lg:gap-5 text-black"
+        >
+          <img src="./assets/coin.png" alt="" />
+          <p class="text-gray">
+            <span>5500</span>
+            <span>BDT</span>
+          </p>
+        </div>
+      </nav>
 
-          <!-- history tab -->
-          <button class="btn
-           text-lg text-gray md:text-xl  w-30 md:w-36 text-gray bg-white border-[1px] border-gray-800 
-          hover:bg-parrot">History</button>
-         </div>
+      <!-- Tab bar starts -->
+      <div class="flex justify-center items-center gap-4 pt-8 lg:pt-20 pb-10">
+        <!-- Donate tab -->
+        <button
+          class="btn text-lg md:text-xl font-semibold bg-parrot w-30 md:w-36 text-black"
+        >
+          Donation
+        </button>
+
+        <!-- history tab -->
+        <button
+          class="btn text-lg text-gray md:text-xl w-30 md:w-36 text-gray bg-white border-[2px] border-gray-800 hover:bg-parrot"
+        >
+          History
+        </button>
+      </div>
     </header>
-    <main>
-        <!-- noakhali fload section -->
-        <section id="noakhali fload" class="container mx-auto overflow-x-hidden"></section>
-
-        <!-- Feni fload section -->
-        <section class="container mx-auto overflow-x-hidden"></section>
-        <!-- Quota Movement section -->
-        <section class="container mx-auto overflow-x-hidden"></section>
+    <main class="space-y-12 lg:space-y-16">
+      <!-- Feni fload section -->
+      <section id="noakhali fload" class="container mx-auto overflow-x-hidden ">
+        <div
+          class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
+        >
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/feni.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col gap-4 lg:gap-y-10"
+          >
+            <p
+              class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
+            >
+              <span><img src="./assets/coin.png" alt="" /></span>
+              <span>600</span>
+              <span>BDT</span>
+            </p>
+            <h2 class="text-black text-xl font-bold">
+              Donate for Flood Relief in Feni,Bangladesh
+            </h2>
+            <p class="text-gray text-sm font-[300]">
+              The recent floods in Feni have devastated local communities,
+              leading to severe disruption and loss. Your generous donation will
+              help provide immediate aid, including food, clean water, and
+              medical supplies, to those affected by this calamity. Together, we
+              can offer crucial support and help rebuild lives in the aftermath
+              of this disaster. Every contribution counts towards making a real
+              difference. Please consider donating today to assist those in
+              urgent need.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button
+              class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Quota Movement section -->
+      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
+        <div
+          class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
+        >
+          <div class="w-full md:w-1/2">
+            <img
+              class="w-full h-full"
+              src="./assets/quota-protest.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col gap-4 lg:gap-y-10"
+          >
+            <p
+              class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
+            >
+              <span><img src="./assets/coin.png" alt="" /></span>
+              <span>2400</span>
+              <span>BDT</span>
+            </p>
+            <h2 class="text-black text-xl font-bold">
+              Aid for Injured in the Quota Movement
+            </h2>
+            <p class="text-gray text-sm font-[300]">
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. Your support is crucial
+              in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button
+              class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- noakhali fload section -->
+      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
+        <div
+          class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
+        >
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/noakhali.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col gap-4 lg:gap-y-10"
+          >
+            <p
+              class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
+            >
+              <span><img src="./assets/coin.png" alt="" /></span>
+              <span>0</span>
+              <span>BDT</span>
+            </p>
+            <h2 class="text-black text-xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p class="text-gray text-sm font-[300]">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button
+              class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="container mx-auto overflow-x-hidden"></footer>
   </body>
