@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <!-- Tailwind & Daisy-UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+      .lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+
+    <!-- config customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              parrot: '#B4F461',
+              black: '#111111',
+              gray: '#111111B3 '
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="lexend overflow-x-hidden">
+    <header class="container mx-auto overflow-x-hidden">
+        <!-- Navbar start -->
+        <nav class="flex justify-around items-center pt-8 pb-8 lg:pb-14">
+          <!-- Blog btn -->
+          <button class="btn text-lg md:text-xl font-semibold bg-parrot w-24 md:w-28 text-black">Blog</button>
+          <!-- Donate logo  -->
+            <div class=" md:flex justify-center items-center gap-5 hidden  text-xl text-black font-semibold">
+                <img src="./assets/logo.png " alt="">
+                <p>Donate Bangladesh</p>
+            </div>
+            <!-- Main balance -->
+            <div class="md:text-xl font-semibold flex justify-center items-center  gap-2 lg:gap-5 text-black ">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-gray">
+                    <span>5500</span>
+                    <span>BDT</span>
+                </p>
+            </div>
+        </nav>
+        <hr>
+        <!-- Tab bar starts -->
+         <div class="flex justify-center items-center gap-4">
+            <!-- Donate tab -->
+          <button class="btn text-lg md:text-xl font-semibold bg-parrot w-30 md:w-36 text-black">Donation</button>
+
+          <!-- history tab -->
+          <button class="btn
+           text-lg text-gray md:text-xl  w-30 md:w-36 text-gray bg-white border-[1px] border-gray-800 
+          hover:bg-parrot">History</button>
+         </div>
+    </header>
+    <main>
+        <!-- noakhali fload section -->
+        <section id="noakhali fload" class="container mx-auto overflow-x-hidden"></section>
+
+        <!-- Feni fload section -->
+        <section class="container mx-auto overflow-x-hidden"></section>
+        <!-- Quota Movement section -->
+        <section class="container mx-auto overflow-x-hidden"></section>
+    </main>
+    <footer class="container mx-auto overflow-x-hidden"></footer>
+  </body>
+</html>
