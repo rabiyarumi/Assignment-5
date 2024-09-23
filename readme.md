@@ -24,7 +24,7 @@
   - Current donation amount.👍
   - Input field for donation amount.👍
   - Button for submitting the donation.👍
-- **History Section**: Initially hidden and empty.
+- **History Section**: Initially hidden and empty.👍
 
 ## Functionalities
 
@@ -50,7 +50,7 @@
 
 ## Challenges
 
-- **Sticky Navbar**: Make the navbar sticky to the top of the page.
+- **Sticky Navbar**: Make the navbar sticky to the top of the page.👍
 - **Blog Page**: Create a `blog.html` file and link it to the main page:
   - The blog page should contain 4 questions and their answers:
     1. What is the Document Object Model (DOM)?

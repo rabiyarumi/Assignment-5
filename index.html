@@ -45,7 +45,7 @@
         class="flex justify-around items-center pt-4 md:pt-8 pb-4 md:pb-8 lg:pb-14 bg-[#1111110D]"
       >
         <!-- Blog btn -->
-        <button
+        <button id="blog-button"
           class="btn text-lg md:text-xl font-semibold bg-parrot w-24 md:w-28 text-black"
         >
           Blog
@@ -63,7 +63,7 @@
         >
           <img src="./assets/coin.png" alt="" />
           <p class="text-gray">
-            <span>5500</span>
+            <span id="current-balace">5500</span>
             <span>BDT</span>
           </p>
         </div>
@@ -107,7 +107,8 @@
               class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
             >
               <span><img src="./assets/coin.png" alt="" /></span>
-              <span>0</span>
+              <!-- full donation amount -->
+              <span id="donated-balance-noakhali">100</span>
               <span>BDT</span>
             </p>
             <h2 class="text-black text-xl font-bold">
@@ -122,20 +123,23 @@
               lives of those in need.
             </p>
             <input
-              type="text"
+            id="input-money-noakhali"
+              type="number"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
-            <button
+
+            <!-- donate button -->
+            <button id="Donate-money-noyakhali"
               class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg "
-              onclick="my_modal_5.showModal()"
+              
             >
               Donate Now
             </button>
+
             <!-- Modal -->
-            <!-- Open the modal using ID.showModal() method -->
-            
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <dialog id="my_modal_1"
+             class=" modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col  items-center gap-3">
                 <h3 class="text-3xl text-black font-bold">Congrates</h3>
                 <img class="h-8 w-8"
@@ -255,6 +259,7 @@
         <h1>Donation History</h1>
       </section>
     </main>
-    <footer class="container mx-auto overflow-x-hidden"></footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/donate.js"></script>
   </body>
 </html>
