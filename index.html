@@ -37,10 +37,12 @@
     </script>
   </head>
   <body class="lexend overflow-x-hidden">
-    <header class="container mx-auto overflow-x-hidden">
+    <header
+      class="container mx-auto overflow-x-hidden sticky top-0 bg-white bg-opacity-80 z-50"
+    >
       <!-- Navbar start -->
       <nav
-        class="flex justify-around items-center pt-8 pb-8 lg:pb-14 bg-[#1111110D]"
+        class="flex justify-around items-center pt-4 md:pt-8 pb-4 md:pb-8 lg:pb-14 bg-[#1111110D]"
       >
         <!-- Blog btn -->
         <button
@@ -68,25 +70,94 @@
       </nav>
 
       <!-- Tab bar starts -->
-      <div class="flex justify-center items-center gap-4 pt-8 lg:pt-20 pb-10">
+      <div
+        class="flex justify-center items-center gap-4 pt-4 md:pt-8 lg:pt-12 md:pb-8 pb-4"
+      >
         <!-- Donate tab -->
         <button
-          class="btn text-lg md:text-xl font-semibold bg-parrot w-30 md:w-36 text-black"
+          class="btn text-lg md:text-xl font-semibold w-30 md:w-36 bg-parrot text-black"
         >
           Donation
         </button>
 
         <!-- history tab -->
         <button
-          class="btn text-lg text-gray md:text-xl w-30 md:w-36 text-gray bg-white border-[2px] border-gray-800 hover:bg-parrot"
+          class="btn text-lg md:text-xl w-30 md:w-36 text-gray text-gray bg-white border-[2px] border-[#bab9b9b3]"
         >
           History
         </button>
       </div>
     </header>
     <main class="space-y-12 lg:space-y-16">
+      <!-- noakhali fload section -->
+      <section
+        id="noakhali fload"
+        class="container mx-auto overflow-x-hidden lg:mt-16"
+      >
+        <div
+          class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
+        >
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/noakhali.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col gap-4 lg:gap-y-10"
+          >
+            <p
+              class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
+            >
+              <span><img src="./assets/coin.png" alt="" /></span>
+              <span>0</span>
+              <span>BDT</span>
+            </p>
+            <h2 class="text-black text-xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p class="text-gray text-sm font-[300]">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button
+              class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg "
+              onclick="my_modal_5.showModal()"
+            >
+              Donate Now
+            </button>
+            <!-- Modal -->
+            <!-- Open the modal using ID.showModal() method -->
+            
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col  items-center gap-3">
+                <h3 class="text-3xl text-black font-bold">Congrates</h3>
+                <img class="h-8 w-8"
+                 src="./assets/coin.png" 
+                alt="coin">
+                <p class="text-gray">
+                  You have Donated for Humankind
+                </p>
+                <p class="text-black text-xl font-bold">successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-parrot ">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </section>
       <!-- Feni fload section -->
-      <section id="noakhali fload" class="container mx-auto overflow-x-hidden ">
+      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
         <div
           class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
         >
@@ -178,47 +249,10 @@
           </div>
         </div>
       </section>
-      <!-- noakhali fload section -->
-      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
-        <div
-          class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
-        >
-          <div class="w-full md:w-1/2">
-            <img class="w-full h-full" src="./assets/noakhali.png" alt="" />
-          </div>
-          <div
-            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col gap-4 lg:gap-y-10"
-          >
-            <p
-              class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
-            >
-              <span><img src="./assets/coin.png" alt="" /></span>
-              <span>0</span>
-              <span>BDT</span>
-            </p>
-            <h2 class="text-black text-xl font-bold">
-              Donate for Flood at Noakhali, Bangladesh
-            </h2>
-            <p class="text-gray text-sm font-[300]">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
-            </p>
-            <input
-              type="text"
-              placeholder="Write Donation Amount"
-              class="input input-bordered w-full"
-            />
-            <button
-              class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
-            >
-              Donate Now
-            </button>
-          </div>
-        </div>
+
+      <!-- ------------------------------------------------------ -->
+      <section>
+        <h1>Donation History</h1>
       </section>
     </main>
     <footer class="container mx-auto overflow-x-hidden"></footer>

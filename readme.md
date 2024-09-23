@@ -13,17 +13,17 @@
 ## Design
 
 - **Navbar**: Create a visually appealing navbar with the following structure:
-  - Logo positioned in the middle.
-  - "Blog" button on the left.
-  - Account balance with a coin icon on the right.
-  - "Donation" and "History" buttons in the center (as per Figma).
+  - Logo positioned in the middle. 👍
+  - "Blog" button on the left.👍
+  - Account balance with a coin icon on the right.👍
+  - "Donation" and "History" buttons in the center (as per Figma).👍
 - **Donation Cards**: Create 3 donation cards with the following details:
-  - Image on the left.
-  - Donation title.
-  - Donation info.
-  - Current donation amount.
-  - Input field for donation amount.
-  - Button for submitting the donation.
+  - Image on the left.👍
+  - Donation title.👍
+  - Donation info.👍
+  - Current donation amount.👍
+  - Input field for donation amount.👍
+  - Button for submitting the donation.👍
 - **History Section**: Initially hidden and empty.
 
 ## Functionalities
@@ -61,4 +61,4 @@
   - Change the button color to indicate when it's active.
 - **Static Modal**: Display a static modal instead of an alert on a successful donation.
 - **Reusable Functions**: Use at least 2 common functions.
-- **Responsive Design**: Ensure the application is responsive for different screen sizes.
+- **Responsive Design**: Ensure the application is responsive for different screen sizes.👍
