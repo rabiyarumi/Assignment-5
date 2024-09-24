@@ -76,22 +76,30 @@
       >
         <!-- Donate tab -->
         <button
-          class="btn text-lg md:text-xl font-semibold w-30 md:w-36 bg-parrot text-black"
+        id="donate-tab"
+          class="btn text-lg md:text-xl font-semibold w-30 md:w-36 bg-lime-300 text-black "
         >
           Donation
         </button>
 
         <!-- history tab -->
         <button
-          class="btn text-lg md:text-xl w-30 md:w-36 text-gray text-gray bg-white border-[2px] border-[#bab9b9b3]"
+        id="history-tab"
+          class="btn text-lg md:text-xl w-30 md:w-36 text-gray bg-white border-[2px] border-[#bab9b9b3]"
         >
           History
         </button>
       </div>
     </header>
-    <main class="space-y-12 lg:space-y-16">
-      <!-- noakhali fload section -->
-      <section
+
+
+
+    <main class="space-y-12 lg:space-y-16 ">
+      <!-- donation section start -->
+      <section id="donation-section"  class="space-y-12 lg:space-y-16">
+
+        <!-- noakhali fload section -->
+        <section
         id="noakhali fload"
         class="container mx-auto overflow-x-hidden lg:mt-4"
       >
@@ -255,12 +263,18 @@
         </div>
       </section>
 
+    </section>
+    <!-- donation section end -->
+
       <!-- ------------------------------------------------------ -->
-      <section>
-        <h1>Donation History</h1>
-      </section>
+
+      <!-- History section -->
+      <div id="history-section" class="w-11/12 mx-auto hidden">
+        
+      </div>
     </main>
     <script src="./js/utilities.js"></script>
     <script src="./js/donate.js"></script>
+    <script src="./js/toggle.js"></script>
   </body>
 </html>
