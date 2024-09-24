@@ -169,8 +169,11 @@
           </div>
         </div>
       </section>
+
+
+
       <!-- Feni fload section -->
-      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
+      <section id="feni-fload" class="container mx-auto overflow-x-hidden">
         <div
           class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
         >
@@ -184,7 +187,7 @@
               class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
             >
               <span><img src="./assets/coin.png" alt="" /></span>
-              <span>600</span>
+              <span id="donated-balance-feni">600</span>
               <span>BDT</span>
             </p>
             <h2 class="text-black text-xl font-bold">
@@ -201,20 +204,46 @@
               urgent need.
             </p>
             <input
-              type="text"
+            id="input-money-feni"
+              type="number"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
             <button
+            id="Donate-money-feni"
               class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
             >
               Donate Now
             </button>
+
+            <!-- Modal -->
+            <dialog id="my_modal_2"
+             class=" modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col  items-center gap-3">
+                <h3 class="text-3xl text-black font-bold">Congrates</h3>
+                <img class="h-8 w-8"
+                 src="./assets/coin.png" 
+                alt="coin">
+                <p class="text-gray">
+                  You have Donated for Humankind
+                </p>
+                <p class="text-black text-xl font-bold">successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-parrot ">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </section>
+
+
+
       <!-- Quota Movement section -->
-      <section id="noakhali fload" class="container mx-auto overflow-x-hidden">
+      <section id="quota-movement" class="container mx-auto overflow-x-hidden">
         <div
           class="flex gap-8 flex-col md:flex-row border-[1px] border-slate-300 rounded-2xl p-4 lg:p-8"
         >
@@ -232,7 +261,7 @@
               class="flex gap-1 bg-[#1111110D] w-fit py-2 px-4 rounded-lg text-gray"
             >
               <span><img src="./assets/coin.png" alt="" /></span>
-              <span>2400</span>
+              <span id="donated-balance-quota">2400</span>
               <span>BDT</span>
             </p>
             <h2 class="text-black text-xl font-bold">
@@ -250,15 +279,38 @@
               their time of need.
             </p>
             <input
-              type="text"
+            id="input-money-quota"
+              type="number"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
             />
             <button
+            id="Donate-money-quota"
               class="text-black text-xl font-semibold btn w-full bg-[#B4F461] py-3 rounded-lg"
             >
               Donate Now
             </button>
+
+            <!-- Modal -->
+            <dialog id="my_modal_3"
+             class=" modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col  items-center gap-3">
+                <h3 class="text-3xl text-black font-bold">Congrates</h3>
+                <img class="h-8 w-8"
+                 src="./assets/coin.png" 
+                alt="coin">
+                <p class="text-gray">
+                  You have Donated for Humankind
+                </p>
+                <p class="text-black text-xl font-bold">successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-parrot ">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </section>
@@ -274,7 +326,9 @@
       </div>
     </main>
     <script src="./js/utilities.js"></script>
-    <script src="./js/donate.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/donate-n.js"></script>
+    <script src="./js/donate-f.js"></script>
+    <script src="./js/donate-q.js"></script>
   </body>
 </html>

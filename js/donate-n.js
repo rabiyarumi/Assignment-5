@@ -9,7 +9,6 @@ document
     const donateMoney = getInputFieldValueById("input-money-noakhali");
     const donatedBalance = getTextFieldValueById("donated-balance-noakhali");
     const currentBalance = getTextFieldValueById("current-balace");
-    // console.log(donateMoney, donatedBalances, currentBalance);
 
     // conditions
     if (
@@ -51,8 +50,6 @@ document
 
       const historyContainer = document.getElementById("history-section");
       historyContainer.insertBefore(historyBox, historyContainer.firstChild);
-
-
       
     }
   });

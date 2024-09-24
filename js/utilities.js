@@ -33,11 +33,11 @@ function showSectionById(id){
 //history tab style function
 
 function applyHistoryTabStyles() {
-    // Apply styles to historyTab (using Tailwind's lime-300)
+        //  styles for historyTab
     historyTab.classList.add("text-[#111111]", "bg-lime-300");
     historyTab.classList.remove("bg-white", "border-[2px]", "border-[#bab9b9b3]");
   
-    // Reset styles for donateTab
+    // styles for donateTab
     donateTab.classList.add("text-slate-600", "bg-white", "border-[2px]", "border-[#bab9b9b3]");
     donateTab.classList.remove("bg-lime-300", "text-black");
   }
@@ -45,11 +45,11 @@ function applyHistoryTabStyles() {
 //Donate tab style function
 
 function applyDonateTabStyles() {
-    // Apply styles to donateTab (using Tailwind's lime-300)
+        // styles for donateTab
     donateTab.classList.add("text-[#111111]", "bg-lime-300");
     donateTab.classList.remove("bg-white", "border-[2px]", "border-[#bab9b9b3]");
   
-    // Reset styles for historyTab
+    //  styles for historyTab
     historyTab.classList.add("text-slate-600", "bg-white", "border-[2px]", "border-[#bab9b9b3]");
     historyTab.classList.remove("bg-lime-300", "text-black");
   }
