@@ -53,3 +53,6 @@ function applyDonateTabStyles() {
     historyTab.classList.add("text-slate-600", "bg-white", "border-[2px]", "border-[#bab9b9b3]");
     historyTab.classList.remove("bg-lime-300", "text-black");
   }
+
+
+  
