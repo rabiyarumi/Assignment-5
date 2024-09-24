@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    <h1>Hello there</h1>
-</body>
+    <!-- Tailwind & Daisy-UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+      .lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+
+    <!-- config customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              parrot: "#B4F461",
+              black: "#111111",
+              gray: "#111111B3 ",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="lexend overflow-x-hidden">
+    <!-- header section -->
+    <header
+      class="container mx-auto overflow-x-hidden sticky top-0 bg-white bg-opacity-80 z-50"
+    >
+      <!-- Navbar start -->
+      <nav
+        class="flex justify-around items-center pt-4 md:pt-8 pb-4 md:pb-8 lg:pb-10 bg-[#1111110D]"
+      >
+        <!-- Blog btn -->
+        <button
+          class="btn text-lg md:text-xl font-semibold bg-parrot w-24 md:w-28 text-black"
+        >
+          Blog
+        </button>
+        <!-- Donate logo  -->
+        <div
+          class="md:flex justify-center items-center gap-5 hidden text-xl text-black font-semibold"
+        >
+          <img src="./assets/logo.png " alt="" />
+          <p>Donate Bangladesh</p>
+        </div>
+        <!-- Main balance -->
+        <div
+          class="md:text-xl font-semibold flex justify-center items-center gap-2 lg:gap-5 text-black"
+        >
+          <img src="./assets/coin.png" alt="" />
+          <p class="text-gray">
+            <span id="current-balace">5500</span>
+            <span>BDT</span>
+          </p>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- main -->
+    <main>
+      <section  class="w-11/12 mx-auto space-y-0.5">
+        <!-- headline -->
+      <div class="py-6 pl-4 flex gap-1">
+        <h1 class="text-4xl text-black font-bold">Important FAQ</h1>
+        <img 
+        class="h-7"
+        src="./assets/Q-logo.png" alt="">
+      </div>
+
+
+      <!-- Ques-1 -->
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow    border-base-300 border rounded-lg mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content text-gray">
+          <p>The Document Object Model (DOM) is a tree-like structure representing a web page, allowing JavaScript to modify content, styles, and handle events.</p>
+        </div>
+      </div>
+
+
+      <!-- Ques-2 -->
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow    border-base-300 border rounded-lg mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content text-gray">
+          <p>I can select DOM elements using methods like getElementById(), 
+            getElementsByClassName(),  getElementsByTagName(),
+            querySelector(), 
+            querySelectorAll(). </p>
+        </div>
+      </div>
+
+
+
+      <!-- Ques-3 -->
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow    border-base-300 border rounded-lg mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM, and why is it useful?
+        </div>
+        <div class="collapse-content text-gray">
+          <p>Event delegation lets a parent element handle events from its children, saving memory and working with new elements.</p>
+        </div>
+      </div>
+
+
+
+      <!-- Ques-4 -->
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow    border-base-300 border rounded-lg mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styles using the DOM?
+        </div>
+        <div class="collapse-content text-gray">
+          <p>I can manipulate attributes with setAttribute() and getAttribute(), and modify styles using element.style.property for dynamic CSS changes.</p>
+        </div>
+      </div>
+
+
+      </section>
+    </main>
+
+
+
+  </body>
 </html>
